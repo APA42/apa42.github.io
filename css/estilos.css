@@ -1,0 +1,149 @@
+body {
+    background-color : #99B2FF;
+}
+
+.content {
+    width : 960px;
+    margin-left : auto;
+    margin-right : auto;
+}
+
+#footer {
+    width: 100%;
+    clear : left;
+    float : left;
+    text-align : center;
+}
+
+/* Para el logo */
+#header_logo {
+    width : 25%;
+    float : left;
+}
+/* Para la imagen del header */
+#header_imagen {
+    width : 75%;
+    height : 150px;
+    float : left;
+    background : url(../img/fondo.jpg) left no-repeat;
+}
+
+
+/*#content {
+    clear : both;
+}*/ 
+
+#content_menuarbol {
+    width : 25%;
+    clear : left;
+}
+#content_contenido {
+    width : 75%;
+    float:right;
+    background-color : #AED0EA;
+}
+
+/* Acerda de mi */
+.acerca_de_mi {
+}
+#acerca {
+    background-color : #AED0EA;
+    padding : 5px;
+    font-size: 0.9em;
+    font-family: Lucida Grande, Lucida Sans, Arial, sans-serif;
+}
+
+/* Proyectos Android */
+.autorecnotes {
+    background-color : #AED0EA;
+}
+
+#tabs {
+    background-color : #AED0EA;
+}
+
+/* Los tabs se cepillan este estilo, se hace inline
+.proyectos_android {
+    background-color : #AED0EA;
+    height : 120px;
+}*/
+
+#proyectos_android_app_logo {
+    width : 50%;
+    height : 120px;
+    float : left; 
+    background : url(../img/autorecnotes.png) left no-repeat;
+    background-color : #AED0EA;
+    text-align : center;
+    /*vertical-align: middle;*/
+	font-size : 25px;
+}
+#proyectos_android_market_logo{
+    width : 20%; 
+    height : 120px;
+    float : left; 
+    background-color : #AED0EA;
+}
+
+#proyectos_android_app_codigo_qr {
+    width : 30%; 
+    height : 120px;
+    float : right; 
+    background : url(../img/autorecnotes_qr.png) right no-repeat;
+    background-color : #AED0EA;
+}
+
+#tabs-descripcion #tabs-autores #tabs-licencia #tabs-agradecimientos {
+    background-color : #AED0EA;
+}
+
+
+/* Desconecta INICIO*/
+.desconecta {
+    background-color : #AED0EA;
+}
+
+#proyectos_android_app_logo_desconecta {
+    width : 50%;
+    height : 120px;
+    float : left;
+    background : url(../img/web_desconecta.png) left no-repeat;
+    background-color : #AED0EA;
+    text-align : center;
+    /*vertical-align: middle;*/
+	font-size : 25px;
+}
+
+#proyectos_android_app_codigo_qr_desconecta {
+    width : 30%; 
+    height : 120px;
+    float : right;
+    background : url(../img/web_desconecta_qr.png) right no-repeat;
+    background-color : #AED0EA;
+}
+
+/* Desconecta FIN */
+
+/*.webkit-any-link {
+    color: -webkit-link;
+    text-decoration: underline;
+    cursor: auto;
+    border : none;
+}*/
+
+a.a-defecto {
+    color: -webkit-link;
+    text-decoration: underline;
+    cursor: auto;
+    border : none;
+    /*padding : 0;
+    margin : 0;*/
+}
+.p-defecto {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+
+	<title>APA42</title>
+
+	<!-- Fuente del script -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js" type="text/javascript"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/jquery-ui.js" type="text/javascript"></script> 
+	<script src="js/jquery.accordion.js" type="text/javascript"></script> 
+    <!--Estilo-->
+
+	<!--Estilo Propios-->
+	<!-- Mejor usar direcciones absolutas pq sino tarda más el navegador(comprobar el sitio, buscar, etc...) -->
+	<!-- <link rel="stylesheet" href="http://www.apa42.com/css/estilos.css" type="text/css" /> -->
+	<link rel="stylesheet" href="//www.apa42.com/css/estilos.css" type="text/css"> 
+<!--		<link rel="stylesheet" href="css/estilos.css" type="text/css"> -->
+	<link rel="stylesheet" href="//www.apa42.com/css/menu.css" type="text/css">
+	<link rel="stylesheet" href="//www.apa42.com/css/jquery-ui.css" type="text/css">
+
+	<script type="text/javascript" charset="utf-8">
+		function DynamicLoad(url, contentId){
+			$(document).ready(
+				function(){$("#" + contentId).load(url,
+					function() {$( "#tabs" ).tabs();}
+				)} 
+		);}
+		$(function() {
+			$( "#tabs" ).tabs();
+		});
+	</script>
+
+	<script type="text/javascript" charset="utf-8">
+		function PrimeraCarga(){
+			DynamicLoad('autorecnotes.html','content_contenido');
+		}
+	</script>
+</head>
+
+
+<body onload="PrimeraCarga();">
+<div class="content" >
+	<!-- ******** -->
+	<!-- Cabecera -->
+	<!-- ******** -->
+	<div id="header">
+		<div id="header_logo">
+			<h3 align=center>APA42</h3>
+			<p align=left style="margin-right: 1em; margin-left: 1em"><i><code>"Hasta luego, y gracias por el pescado"</code> (Douglas Adams)</i></p>
+		</div>
+		<div id="header_imagen">
+		</div>
+	</div>
+	<!-- ********* -->
+	<!-- Contenido -->
+	<!-- ********* -->
+	<div id="content">
+		<!--  para nuestro contenido de las página, creamos dos div, uno para el menú y otro para el contenido en si -->
+		<div id="content_contenido">
+		</div>
+		<div id="content_menuarbol">
+			<ul id="menu">
+				<li><a href="#">Proyectos Android</a>
+					<ul id="open"> <!-- Para que este abierto el primero -->
+						<li><a href="#" OnClick="DynamicLoad('autorecnotes.html','content_contenido');">AutoRecNotes</a></li>
+                        <li><a href="#" OnClick="DynamicLoad('desconecta.html','content_contenido');">Desconecta</a></li>
+					</ul>
+				</li>
+				<li><a href="#" OnClick="DynamicLoad('acerca_de_mi.html','content_contenido');">Acerca de mi</a></li>
+				<li><a href="#"><a href="index_en.html"><i>English Version</i></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- *** -->
+	<!-- Pie -->
+	<!-- *** -->
+	<div id="footer">
+        <small>
+        <!-- link cc class="webkit-any-link" -->
+            <p>Fotografía bajo licencia  <a rel="license" class="webkit-any-link" href="http://creativecommons.org/licenses/by-nc-nd/3.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png" /></a>
+            </p>
+<!--            <p>Contacto <a class="a-defecto" href="mailto:info@apa42.com">info at apa42.com</a></p>-->
+        </small>
+    </div> 
+</div>
+
+</body>
+</html>
